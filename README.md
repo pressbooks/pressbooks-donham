@@ -8,7 +8,7 @@ This theme is named after Wallace Donham, Dean of Harvard Business School from 1
 
 * PHP >= 5.6
 * WordPress >= 4.8.0
-* Pressbooks >= 4.0.
+* Pressbooks >= 4.0.0
 * Pressbooks Book >= 1.7.0
 
 ## Installation
