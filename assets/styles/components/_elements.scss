@@ -7,20 +7,32 @@
 }
 
 // Body
+$body-font-size: (epub: medium, prince: 11pt, web: 14pt) !default;
 
 // Headers
 
 // H1
+$h1-font-size: 1.3em !default;
+$h1-align: left !default;
+$h1-font-weight: normal !default;
 
 // H2
+$h2-font-size: 1.1em !default;
+$h2-align: left !default;
 
 // H3
+$h3-font-size: 1em !default;
+$h3-align: left !default;
+$h3-font-style: normal !default;
 
 // H4
+$h4-font-size: 8.97pt !default;
 
 // H5
+$h5-font-size: 9.96pt !default;
 
 // H6
+$h6-font-size: 0.67em !default;
 
 // Cite
 

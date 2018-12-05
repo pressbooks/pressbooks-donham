@@ -7,20 +7,59 @@
 }
 
 // Title Page Title
+$title-title-font-size:(
+  epub: 1.75em,
+  prince: 28pt,
+  web: 1.75em
+) !default;
+$title-title-align: right !default;
+$title-title-line-height: 1.6em !default;
+$title-title-margin-top: (
+  epub: 2em,
+  prince: 5.5cm,
+  web: 3em
+) !default;
 
 // Title Page Subtitle
+$title-subtitle-font-size:(
+  epub: 1.25em,
+  prince: 20pt,
+  web: 1.25em
+) !default;
+$title-subtitle-margin-top: 1.5cm !default;
+$title-subtitle-align: right !default;
 
 // Title Page Author
+$title-author-font-size:(
+  epub: 1em,
+  prince: 17pt,
+  web: 1em
+) !default;
+$title-author-margin-top: (
+  epub: 2em,
+  prince: 1.5cm,
+  web: 2em
+) !default;
+$title-author-text-transform: uppercase !default;
+$title-author-align: right !default;
 
 // Title Page Publisher
+$title-publisher-align: right !default;
+$title-publisher-font-weight: bold !default;
 
 // Title Page Publisher City
+$title-publisher-city-align: right !default;
+$title-publisher-city-font-size: 0.83em !default;
+$title-publisher-city-letter-spacing: normal !default;
+$title-publisher-city-word-spacing: normal !default;
+$title-publisher-city-text-transform: none !default;
 
 //Dedication
 
 //Epigraph
 
 // Copyright
+$copyright-float: bottom !default;
 
 // Section License
 

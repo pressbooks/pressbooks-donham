@@ -8,6 +8,24 @@
 }
 
 // Section Header
+$section-title-font-size: (
+  epub: 1.5em,
+  prince: 1.65em,
+  web: 2em
+) !default;
+$section-title-margin-top: (
+  epub: 0,
+  prince: 0,
+  web: 0
+) !default;
+$section-title-margin-bottom: (
+  epub: 2em,
+  prince: 2.5cm,
+  web: 2em
+) !default;
+$section-title-font-weight: bold !default;
+$section-title-align: right !default;
+$section-title-line-height: 1.8em !default;
 
 // Section Space
 
@@ -26,8 +44,20 @@
 // Part Title
 
 // Chapter Number
+$chapter-number-display: inline !default;
+$chapter-number-font-size: (
+  epub: 1em,
+  prince: 1.25em,
+  web: 1em
+) !default;
+$chapter-number-margin-right: (
+  epub: 0,
+  prince: .5em,
+  web: 0
+) !default;
 
 // Chapter Title
+$chapter-title-display: inline !default;
 
 // Back Matter
 
@@ -46,6 +76,12 @@
 
 h6.short-title {
   display: none;
+}
+
+.chapter-title-wrap {
+  margin-left: 6em;
+  text-align: right;
+  display: block;
 }
 
 @if $type == 'epub' {
