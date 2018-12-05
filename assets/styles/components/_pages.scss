@@ -1,0 +1,43 @@
+// Pages
+
+@if $type == "epub" {
+}
+
+@if $type == "web" {
+}
+
+// Title Page Title
+
+// Title Page Subtitle
+
+// Title Page Author
+
+// Title Page Publisher
+
+// Title Page Publisher City
+
+//Dedication
+
+//Epigraph
+
+// Copyright
+
+// Section License
+
+// Override variables above this line, using the !default flag to allow further overrides.
+@import 'variables/pages';
+
+// Add custom SCSS below these imports and includes.
+@import 'components/pages';
+
+h4.publisher {
+    float: none;
+}
+
+h5.publisher-city {
+    float: none;
+}
+
+@if $type == 'epub' {
+
+}

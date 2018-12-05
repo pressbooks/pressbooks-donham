@@ -1,0 +1,37 @@
+// Colors
+$color-1: initial !default;
+$color-2: black !default;
+$color-3: #585858 !default; //second hightlight color, or black
+$color-4: #e6e6e6 !default; //shaded
+
+@if $type == "epub" {
+}
+
+@if $type == "web" {
+}
+
+// Headers
+
+// Title Page
+
+// Front Matter
+
+// Running Content
+
+// Chapter
+
+// Pullquotes
+
+// Media
+
+// Table
+
+// Override variables above this line, using the !default flag to allow further overrides.
+@import 'variables/colors';
+
+// Add custom SCSS below these imports and includes.
+@import 'components/colors';
+
+.wp-caption-text {
+  color: $color-3;
+}

@@ -1,0 +1,57 @@
+// Section Titles
+@if $type == 'epub' {
+
+}
+
+@else if $type == "web" {
+
+}
+
+// Section Header
+
+// Section Space
+
+// Section Subtitle
+
+// Section Author
+
+// Aphorism
+
+// Front Matter
+
+// TOC Title
+
+// Part Number
+
+// Part Title
+
+// Chapter Number
+
+// Chapter Title
+
+// Back Matter
+
+// Override variables above this line, using the !default flag to allow further overrides.
+@import 'variables/section-titles';
+
+// Add custom SCSS below these imports and includes.
+@import 'components/section-titles';
+
+.textbox.exercises h3,
+.textbox.key-takeaways h3,
+.textbox.learning-objectives h3,
+.textbox.examples h3 {
+    font-size: 1em;
+}
+
+h6.short-title {
+  display: none;
+}
+
+@if $type == 'epub' {
+
+}
+
+@if $type == 'web'{
+
+}

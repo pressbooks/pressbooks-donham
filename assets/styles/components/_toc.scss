@@ -1,0 +1,31 @@
+// Table of Contents
+
+@if $type == 'epub' {
+}
+
+// TOC Page Number
+
+// TOC Front Matter
+
+// TOC Front Matter Subtitle
+
+// TOC Front Matter Author
+
+// TOC Part Number
+
+// TOC Part Title
+
+// TOC Chapter Number
+
+// TOC Chapter Title
+
+// TOC Chapter Subtitle
+
+// TOC Chapter Author
+
+// Override variables above this line, using the !default flag to allow further overrides.
+@import 'variables/toc';
+
+// Add custom SCSS below these imports and includes.
+// @import 'components/toc/center';
+@import 'components/toc/left';

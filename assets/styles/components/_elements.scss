@@ -1,0 +1,42 @@
+// Elements
+
+@if $type == 'epub' {
+}
+
+@if $type == 'web' {
+}
+
+// Body
+
+// Headers
+
+// H1
+
+// H2
+
+// H3
+
+// H4
+
+// H5
+
+// H6
+
+// Cite
+
+// Tables
+
+// Blockquote
+
+// Override variables above this line, using the !default flag to allow further overrides.
+@import 'variables/elements';
+
+// Add custom SCSS below these imports and includes.
+@import 'components/elements';
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0
+}
+
