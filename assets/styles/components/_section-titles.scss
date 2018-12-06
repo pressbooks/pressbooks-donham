@@ -8,9 +8,14 @@
 }
 
 // Section Header
+$section-title-block-margin-bottom: (
+  epub: 2em,
+  prince: 2.5cm,
+  web: 2em
+) !default;
 $section-title-font-size: (
   epub: 1.5em,
-  prince: 1.65em,
+  prince: 1.64em,
   web: 2em
 ) !default;
 $section-title-margin-top: (
