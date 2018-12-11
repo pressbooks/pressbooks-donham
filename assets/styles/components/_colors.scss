@@ -11,6 +11,9 @@ $color-4: #e6e6e6 !default; //shaded
 }
 
 // Headers
+$h4-color: $color-2 !default;
+$h5-color: $color-2 !default;
+$h6-color: $color-2 !default;
 
 // Title Page
 $title-page-title-color: $color-3 !default;
@@ -23,6 +26,7 @@ $title-page-publisher-city-color: $color-2 !default;
 // Running Content
 
 // Chapter
+$chapter-number-color: $color-2 !default;
 
 // Pullquotes
 

@@ -13,14 +13,20 @@ $section-title-block-margin-bottom: (
   prince: 2.5cm,
   web: 2em
 ) !default;
+$section-title-block-margin-top: (
+  epub: 3em,
+  prince: 3.05cm,
+  web: 3em
+) !default;
+$section-header-margin-top: $section-title-block-margin-top !default;
 $section-title-font-size: (
   epub: 1.5em,
-  prince: 1.64em,
+  prince: 1.635em,
   web: 2em
 ) !default;
 $section-title-margin-top: (
   epub: 0,
-  prince: 0,
+  prince: 0em,
   web: 0
 ) !default;
 $section-title-margin-bottom: (
@@ -78,6 +84,11 @@ $chapter-number-margin-right: (
 
 // Chapter Title
 $chapter-title-display: inline !default;
+$chapter-title-margin-top: (
+  epub: 0,
+  prince: 1em,
+  web: 0
+) !default;
 
 // Back Matter
 

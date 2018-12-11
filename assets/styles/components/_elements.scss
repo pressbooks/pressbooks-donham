@@ -13,36 +13,66 @@ $body-font-size: (epub: medium, prince: 11pt, web: 14pt) !default;
 $para-indent: 1.5em !default;
 
 // Headers
+$hx-margin-top: 1.15em !default;
+$hx-margin-bottom: 15px !default;
+$hx-line-height: 1.6em !default;
+
 
 // H1
-$h1-font-size: 1.3em !default;
+$h1-font-size: 1.305em !default;
 $h1-align: left !default;
 $h1-font-weight: normal !default;
 
 // H2
-$h2-font-size: 1.09em !default;
+$h2-margin-top: 1.2em !default;
+$h2-margin-bottom: 15px !default;
+$h2-font-size: 1.0875em !default;
 $h2-align: left !default;
 
 // H3
-$h3-font-size: 0.82em !default;
+$h3-margin-top: 1.525em !default;
+$h3-font-size: 0.815em !default;
 $h3-align: left !default;
 $h3-font-style: normal !default;
 
 // H4
-$h4-font-size:  0.82em !default;
+$h4-margin-top: 1.75em !default;
+$h4-font-size:  0.815em !default;
 
 // H5
-$h5-font-size: 0.9em !default;
+$h5-margin-top: 1.75em !default;
+$h5-font-size: .905em !default;
 $h5-font-style: normal !default;
 
 // H6
-$h6-font-size: 0.74em !default;
+$h6-margin-top: 2.6em !default;
+$h6-font-size: 0.73em !default;
 
 // Cite
+$cite-text-transform: none;
+$cite-font-style: italic;
+$cite-font-variant: none !default;
 
 // Tables
 
+// Lists
+// UL
+$ul-ul-margin-top: 0em !default;
+$ul-margin-left: (epub: 2em, prince: 2em, web: 0) !default;
+$ul-padding-left: 2em !default;
+$ul-margin-top: 0em !default;
+
+$ol-ol-margin-top: 0.25em !default;
+
+$li-li-margin-top: 0.25em !default;
+
 // Blockquote
+$blockquote-font-size: 1em !default;
+$blockquote-line-height: 1.4em !default;
+$blockquote-margin-top: 1.15em !default;
+$blockquote-margin-right: 2.05em !default;
+$blockquote-margin-bottom: 1.1em !default;
+$blockquote-margin-left: 2.05em !default;
 
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/elements';
@@ -57,5 +87,9 @@ p {
 }
 
 p.indent {
-  text-indent: 1.5em !important;
+  text-indent: 2em;
+}
+
+ul li li li {
+  list-style-image: none;
 }
