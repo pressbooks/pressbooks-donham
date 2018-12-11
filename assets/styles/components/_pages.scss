@@ -9,10 +9,11 @@
 // Title Page Title
 $title-title-font-size:(
   epub: 1.75em,
-  prince: 28pt,
+  prince: 2.5433em,
   web: 1.75em
 ) !default;
 $title-title-align: right !default;
+$title-title-font-weight: bold !default;
 $title-title-line-height: 1.6em !default;
 $title-title-margin-top: (
   epub: 2em,
@@ -23,16 +24,19 @@ $title-title-margin-top: (
 // Title Page Subtitle
 $title-subtitle-font-size:(
   epub: 1.25em,
-  prince: 20pt,
+  prince: 1.85em,
   web: 1.25em
 ) !default;
 $title-subtitle-margin-top: 1.5cm !default;
 $title-subtitle-align: right !default;
+$title-subtitle-font-style: none !default;
+$title-subtitle-font-weight: bold !default;
+$title-subtitle-text-transform: uppercase !default;
 
 // Title Page Author
 $title-author-font-size:(
   epub: 1em,
-  prince: 17pt,
+  prince: 1.5em,
   web: 1em
 ) !default;
 $title-author-margin-top: (
