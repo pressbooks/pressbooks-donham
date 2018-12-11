@@ -1,7 +1,7 @@
 // Colors
 $color-1: initial !default;
 $color-2: black !default;
-$color-3: #585858 !default; //second hightlight color, or black
+$color-3: #acacac !default; //second hightlight color, or black
 $color-4: #e6e6e6 !default; //shaded
 
 @if $type == "epub" {
@@ -13,8 +13,10 @@ $color-4: #e6e6e6 !default; //shaded
 // Headers
 
 // Title Page
-$title-page-title-color: $color-4 !default;
+$title-page-title-color: $color-3 !default;
 $title-page-subtitle-color: $color-2 !default;
+$title-page-publisher-color: $color-2 !default;
+$title-page-publisher-city-color: $color-2 !default;
 
 // Front Matter
 

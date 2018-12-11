@@ -41,6 +41,21 @@ $section-title-line-height: 1.8em !default;
 // Aphorism
 
 // Front Matter
+$front-matter-title-font-size: (
+  epub: 1.5em,
+  prince: 1.875em,
+  web: 2em
+) !default;
+$front-matter-title-margin-top: (
+  epub: 0,
+  prince: -.1em,
+  web: 0
+) !default;
+$front-matter-title-margin-bottom: (
+  epub: 2em,
+  prince: -1.85cm,
+  web: 2em
+) !default;
 
 // TOC Title
 

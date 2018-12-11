@@ -9,7 +9,7 @@
 // Title Page Title
 $title-title-font-size:(
   epub: 1.75em,
-  prince: 2.5433em,
+  prince: 2.545em,
   web: 1.75em
 ) !default;
 $title-title-align: right !default;
@@ -17,14 +17,14 @@ $title-title-font-weight: bold !default;
 $title-title-line-height: 1.6em !default;
 $title-title-margin-top: (
   epub: 2em,
-  prince: 5.5cm,
+  prince: 6cm,
   web: 3em
 ) !default;
 
 // Title Page Subtitle
 $title-subtitle-font-size:(
   epub: 1.25em,
-  prince: 1.85em,
+  prince: 1.82em,
   web: 1.25em
 ) !default;
 $title-subtitle-margin-top: 1.5cm !default;
@@ -36,7 +36,7 @@ $title-subtitle-text-transform: uppercase !default;
 // Title Page Author
 $title-author-font-size:(
   epub: 1em,
-  prince: 1.5em,
+  prince: 1.54em,
   web: 1em
 ) !default;
 $title-author-margin-top: (
@@ -46,14 +46,22 @@ $title-author-margin-top: (
 ) !default;
 $title-author-text-transform: uppercase !default;
 $title-author-align: right !default;
+$title-author-letter-spacing: none !default;
+$title-author-word-spacing: none !default;
 
 // Title Page Publisher
 $title-publisher-align: right !default;
 $title-publisher-font-weight: bold !default;
+$title-publisher-font-size: 1.075em !default;
+$title-publisher-letter-spacing: none !default;
+$title-publisher-word-spacing: none !default;
+$title-publisher-margin-top: (epub: 0, prince: 1.5em, web: 0) !default;
+$title-publisher-margin-bottom: (epub: 0.5em, prince: 2em, web: 0.5em) !default;
 
 // Title Page Publisher City
 $title-publisher-city-align: right !default;
-$title-publisher-city-font-size: 0.83em !default;
+$title-publisher-city-font-size: .9em !default;
+$title-publisher-city-font-weight: bold !default;
 $title-publisher-city-letter-spacing: normal !default;
 $title-publisher-city-word-spacing: normal !default;
 $title-publisher-city-text-transform: none !default;
@@ -75,10 +83,12 @@ $copyright-float: bottom !default;
 
 h4.publisher {
     float: none;
+    color: black;
 }
 
 h5.publisher-city {
     float: none;
+    color: black;
 }
 
 @if $type == 'epub' {

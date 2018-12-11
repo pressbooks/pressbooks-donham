@@ -9,6 +9,9 @@
 // Body
 $body-font-size: (epub: medium, prince: 11pt, web: 14pt) !default;
 
+// Para
+$para-indent: 1.5em !default;
+
 // Headers
 
 // H1
@@ -53,3 +56,6 @@ p {
   padding: 0
 }
 
+p.indent {
+  text-indent: 1.5em !important;
+}
