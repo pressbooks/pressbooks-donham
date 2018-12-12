@@ -52,6 +52,7 @@ $h6-font-size: 0.73em !default;
 $cite-text-transform: none;
 $cite-font-style: italic;
 $cite-font-variant: none !default;
+$cite-font-size: 1em !default;
 
 // Tables
 
@@ -73,6 +74,10 @@ $blockquote-margin-top: 1.15em !default;
 $blockquote-margin-right: 2.05em !default;
 $blockquote-margin-bottom: 1.1em !default;
 $blockquote-margin-left: 2.05em !default;
+
+// Pre
+$pre-margin-top: 1.15em !default;
+$pre-margin-bottom: 1.15em !default;
 
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/elements';

@@ -9,7 +9,11 @@
 }
 
 // Images
-$image-wrapper-margin-bottom: 4em !default;
+$image-wrapper-margin-bottom: 1em !default;
+
+$image-caption-font-size: 0.875em !default;
+$image-caption-margin-top: (epub: 0, prince: .6em, web: 0) !default;
+$image-caption-font-style: italic !default;
 
 // Interactive Content
 

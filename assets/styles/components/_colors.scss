@@ -24,13 +24,22 @@ $title-page-publisher-city-color: $color-2 !default;
 // Front Matter
 
 // Running Content
+$runninghead-color: $color-2 !default;
+$page-number-color: $color-2 !default;
+
+// Part
+$part-number-color: $color-2 !default;
 
 // Chapter
 $chapter-number-color: $color-2 !default;
+$chapter-subtitle-color: $color-2 !default;
+$chapter-author-color: $color-2 !default;
+$chapter-aphorism-color: $color-2 !default;
 
 // Pullquotes
 
 // Media
+$image-caption-text-color: $color-1 !default;
 
 // Table
 
@@ -39,7 +48,3 @@ $chapter-number-color: $color-2 !default;
 
 // Add custom SCSS below these imports and includes.
 @import 'components/colors';
-
-.wp-caption-text {
-  color: $color-3;
-}
