@@ -67,8 +67,13 @@ $title-publisher-city-word-spacing: normal !default;
 $title-publisher-city-text-transform: none !default;
 
 //Dedication
+$dedication-margin-right: 0 !default;
+$dedication-margin-left: 0 !default;
 
 //Epigraph
+$epigraph-margin-right: 0 !default;
+$epigraph-margin-left: 0 !default;
+$epigraph-align: left !default;
 
 // Copyright
 $copyright-float: bottom !default;
