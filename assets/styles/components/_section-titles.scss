@@ -41,7 +41,6 @@ $aphorism-margin-left: (epub: auto, prince: 50%, web: auto) !default;
 $aphorism-margin-bottom: (epub: 0, prince: 4em, web: 0) !default;
 $aphorism-line-height: 1.5em !default;
 
-
 $aphorism-cite-font-variant: small-caps !default;
 $aphorism-cite-font-size: (epub: small, prince: .875em, web: 0.9em) !default;
 $aphorism-cite-align: right !default;
@@ -53,6 +52,9 @@ $front-matter-title-margin-top: (epub: 0, prince: -.175em, web: 0) !default;
 $front-matter-title-margin-bottom: (epub: 2em, prince: -1.85cm, web: 2em) !default;
 
 // TOC Title
+$toc-title-font-size: (epub: 1.5em, prince: 1.88em, web: 2em) !default;
+$toc-title-margin-top: (epub: 3em, prince: 2.9cm, web: 3em) !default;
+$toc-title-margin-bottom: (epub: 2em, prince: 2.4cm, web: 2em) !default;
 
 // Part Number
 $part-number-font-size: (epub: 1em, prince: 1.275em, web: 1em) !default;

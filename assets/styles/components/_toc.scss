@@ -3,21 +3,32 @@
 @if $type == 'epub' {
 }
 
+$toc-left-left-gutter: (epub: 2.5em, prince: 1cm) !default;
+$toc-base-line-height: (epub: 1.2, prince: 1.4em) !default;
+$toc-block-margin-top: 0em !default;
+
 // TOC Page Number
 
 // TOC Front Matter
+$toc-front-matter-margin-top: (epub: 0.25em, prince: 1em) !default;
+$toc-front-matter-page-number-font-size: 1em !default;
 
 // TOC Front Matter Subtitle
 
 // TOC Front Matter Author
 
 // TOC Part Number
+$toc-part-number-font-weight: bold !default;
 
 // TOC Part Title
+$toc-part-title-font-weight: bold !default;
+$toc-part-title-font-size: (epub: 1.2em, prince: 1.1em, web: 1em) !default;
 
 // TOC Chapter Number
 
 // TOC Chapter Title
+$toc-chapter-title-font-size: .875em !default;
+$toc-chapter-margin-top: (epub: 0.25em, prince: 1.2em) !default;
 
 // TOC Chapter Subtitle
 
@@ -29,3 +40,8 @@
 // Add custom SCSS below these imports and includes.
 // @import 'components/toc/center';
 @import 'components/toc/left';
+
+#toc .part {
+  margin-left: 0em;
+  margin: 0.6cm 0 0.4em;
+}
