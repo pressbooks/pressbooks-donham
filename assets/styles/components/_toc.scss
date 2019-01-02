@@ -1,6 +1,9 @@
 // Table of Contents
 
 @if $type == 'epub' {
+  $toc-front-matter-title-font-style: italic !default;
+
+  $toc-chapter-author-font-style: italic !default;
 }
 
 $toc-left-left-gutter: (epub: 2.5em, prince: 1cm) !default;
@@ -10,8 +13,9 @@ $toc-block-margin-top: 0em !default;
 // TOC Page Number
 
 // TOC Front Matter
-$toc-front-matter-margin-top: (epub: 0.25em, prince: 1em) !default;
+$toc-front-matter-margin-top: (epub: 0em, prince: 1em) !default;
 $toc-front-matter-page-number-font-size: 1em !default;
+$toc-front-matter-title-font-style: normal !default;
 
 // TOC Front Matter Subtitle
 
@@ -28,11 +32,13 @@ $toc-part-title-font-size: (epub: 1.2em, prince: 1.1em, web: 1em) !default;
 
 // TOC Chapter Title
 $toc-chapter-title-font-size: .875em !default;
-$toc-chapter-margin-top: (epub: 0.25em, prince: 1.2em) !default;
+$toc-chapter-margin-top: (epub: 0em, prince: 1.2em) !default;
 
 // TOC Chapter Subtitle
+$toc-chapter-subtitle-margin-top: (epub: 0, prince: 0.4em, web: 0.4em) !default;
 
 // TOC Chapter Author
+$toc-chapter-author-margin-top: (epub: 0, prince: 0.4em, web: 0.4em) !default;
 
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/toc';
@@ -44,4 +50,23 @@ $toc-chapter-margin-top: (epub: 0.25em, prince: 1.2em) !default;
 #toc .part {
   margin-left: 0em;
   margin: 0.6cm 0 0.4em;
+}
+
+@if $type == "epub" {
+  #toc .chapter .chapter-license,
+  #toc .front-matter .chapter-license,
+  #toc .back-matter .chapter-license, {
+    margin-left: 1em;
+    margin-bottom: 5px;
+    font-style: italic;
+  }
+
+  #toc .chapter .chapter-subtitle,
+  #toc .chapter .chapter-author,
+  #toc .front-matter .chapter-subtitle,
+  #toc .front-matter .chapter-author,
+  #toc .back-matter .chapter-subtitle,
+  #toc .back-matter .chapter-author {
+    margin-left: 1em;
+  }
 }

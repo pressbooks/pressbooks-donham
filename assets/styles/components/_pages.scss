@@ -1,32 +1,27 @@
 // Pages
 
 @if $type == "epub" {
+  $title-subtitle-text-transform: none !default;
+  $title-subtitle-margin-top: 1em !default;
+
+  $dedication-font-style: normal !default;
+  $epigraph-font-style: normal !default;
+
+  $copyright-align: justify !default;
 }
 
 @if $type == "web" {
 }
 
 // Title Page Title
-$title-title-font-size:(
-  epub: 1.75em,
-  prince: 2.545em,
-  web: 1.75em
-) !default;
+$title-title-font-size: (epub: 2em, prince: 2.545em, web: 2em) !default;
 $title-title-align: right !default;
 $title-title-font-weight: bold !default;
 $title-title-line-height: 1.6em !default;
-$title-title-margin-top: (
-  epub: 2em,
-  prince: 6cm,
-  web: 3em
-) !default;
+$title-title-margin-top: (epub: 30%, prince: 6cm, web: 3em) !default;
 
 // Title Page Subtitle
-$title-subtitle-font-size:(
-  epub: 1.25em,
-  prince: 1.82em,
-  web: 1.25em
-) !default;
+$title-subtitle-font-size:(epub: 1.6em, prince: 1.82em, web: 1.25em) !default;
 $title-subtitle-margin-top: 1.5cm !default;
 $title-subtitle-align: right !default;
 $title-subtitle-font-style: none !default;
@@ -34,16 +29,8 @@ $title-subtitle-font-weight: bold !default;
 $title-subtitle-text-transform: uppercase !default;
 
 // Title Page Author
-$title-author-font-size:(
-  epub: 1em,
-  prince: 1.54em,
-  web: 1em
-) !default;
-$title-author-margin-top: (
-  epub: 2em,
-  prince: 1.5cm,
-  web: 2em
-) !default;
+$title-author-font-size:(epub: 1em, prince: 1.54em, web: 1em) !default;
+$title-author-margin-top: (epub: 1em, prince: 1.5cm, web: 2em) !default;
 $title-author-text-transform: uppercase !default;
 $title-author-align: right !default;
 $title-author-letter-spacing: none !default;
@@ -55,7 +42,7 @@ $title-publisher-font-weight: bold !default;
 $title-publisher-font-size: 1.075em !default;
 $title-publisher-letter-spacing: none !default;
 $title-publisher-word-spacing: none !default;
-$title-publisher-margin-top: (epub: 0, prince: 1.5em, web: 0) !default;
+$title-publisher-margin-top: (epub: 1.5em, prince: 1.5em, web: 0) !default;
 $title-publisher-margin-bottom: (epub: 0.5em, prince: 2em, web: 0.5em) !default;
 
 // Title Page Publisher City
@@ -77,8 +64,11 @@ $epigraph-align: left !default;
 
 // Copyright
 $copyright-float: bottom !default;
+$copyright-margin-top: (epub: 0, prince: 2cm, web: 2em) !default;
 
 // Section License
+$section-license-font-style: normal !default;
+$section-license-margin-top: 0em !default;
 
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/pages';

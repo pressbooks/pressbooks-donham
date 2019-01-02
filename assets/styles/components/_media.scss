@@ -16,6 +16,8 @@ $image-caption-margin-top: (epub: 0, prince: .6em, web: 0) !default;
 $image-caption-font-style: italic !default;
 
 // Interactive Content
+$interactive-content-font-style: normal !default;
+$interactive-content-text-indent: 0 !default;
 
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/media';

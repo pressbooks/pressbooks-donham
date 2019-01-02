@@ -5,6 +5,7 @@ $color-3: #acacac !default; //second hightlight color, or black
 $color-4: #e6e6e6 !default; //shaded
 
 @if $type == "epub" {
+  $title-page-title-color: $color-2 !default;
 }
 
 @if $type == "web" {

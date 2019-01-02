@@ -1,7 +1,14 @@
 // Special Elements
 
 @if $type == 'epub' {
+  $hr-margin-top: 10px !default;
+  $hr-margin-bottom: 10px !default;
 
+  $hr-break-symbols-margin-bottom: 20px !default;
+
+  $textbox-align: justify !default;
+
+  $pullquote-width: 70% !default;
 }
 
 @if $type == "web" {
@@ -25,6 +32,7 @@ $textbox-padding-bottom: 10px !default;
 $textbox-padding-left: 10px !default;
 $textbox-margin-top: 1.1em !default;
 $textbox-margin-bottom: 1.1em !default;
+$textbox-text-indent: 0 !default;
 
 // Edu Textbox
 $edu-header-font-weight: normal !default;
@@ -39,6 +47,7 @@ $footnote-indent: 1em !default;
 $footnote-number-marker-line-height: 1.4em !default;
 
 // PullQuotes
+
 
 // Columns
 
@@ -74,7 +83,19 @@ div.sidebar {
 }
 
 @if $type == "epub" {
+  .textbox li {
+    text-indent: 0;
+  }
 
+  div.footnotes {
+    margin: 20px 10px 40px 40px;
+  }
+
+  hr.before-footnotes {
+    margin: 10px auto;
+    text-align: center;
+    width: 20%;
+  }
 }
 
 @if $type == "web" {
