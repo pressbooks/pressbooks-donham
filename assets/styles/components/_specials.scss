@@ -36,6 +36,12 @@ $textbox-text-indent: 0 !default;
 
 // Edu Textbox
 $edu-header-font-weight: normal !default;
+$edu-header-font-size: .9em !default;
+
+$edu-textbox-padding-top: 2% !default;
+$edu-textbox-padding-right: 3% !default;
+$edu-textbox-padding-bottom: 2% !default;
+$edu-textbox-padding-left: 3% !default;
 
 // Sidebar Textbox
 
@@ -80,6 +86,28 @@ div.sidebar {
   font-style: italic;
   text-align: left;
   padding: 0.75em;
+}
+
+.sidebar h3 {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.sidebar ul {
+  // padding-left: 1em;
+  margin-left: 1em;
+}
+.sidebar li {
+  margin-top: 0em;
+}
+
+.textbox.exercises ol li ,
+.textbox.learning-objectives ol li ,
+.textbox.key-takeaways ol li ,
+.textbox.examples ol li {
+  list-style-type: inside; // doesnt work cause of counter
+  text-indent: 0;
+  margin-top: 0;
 }
 
 @if $type == "epub" {
