@@ -86,6 +86,10 @@ $chapter-title-margin-bottom: (epub: 4.6em, prince: 2.5cm, web: 2em) !default;
 $chapter-title-line-height: 1.83em !default;
 
 // Back Matter
+$back-matter-title-align: left !default;
+$back-matter-title-font-size: 1.6em !default;
+// $back-matter-title-margin-top: (epub: 0, prince: -2.55cm, web: 0) !default;
+$back-matter-title-margin-bottom: (epub: 2em, prince: .65cm, web: 2em) !default;
 
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/section-titles';
@@ -101,6 +105,15 @@ h6.short-title {
   margin-left: 11em;
   text-align: right;
   display: block;
+}
+
+div.index div h1{
+  margin-bottom: .65cm !important;
+}
+
+.back-matter-title-wrap {
+  margin-top: .55cm;
+  margin-bottom: .65cm !important;
 }
 
 .aphorism,

@@ -25,14 +25,15 @@ $first-character-font-size: 100% !default;
 
 // Textboxes
 $textbox-font-size: 1em !default;
-$textbox-line-height: 1.6em !default;
+$textbox-line-height: 1.4em !default;
 $textbox-padding-top: 10px !default;
 $textbox-padding-right: 10px !default;
 $textbox-padding-bottom: 10px !default;
 $textbox-padding-left: 10px !default;
 $textbox-margin-top: 1.1em !default;
 $textbox-margin-bottom: 1.1em !default;
-$textbox-text-indent: 0 !default;
+$textbox-text-indent: 1em !default;
+$textbox-text-align: justify !default;
 
 // Edu Textbox
 $edu-header-font-weight: normal !default;
@@ -48,9 +49,26 @@ $footnote-indent: 1em !default;
 $footnote-number-marker-line-height: 1.4em !default;
 
 // PullQuotes
-
+$pullquote-width: 45% !default;
+$pullquote-font-size: 1em !default;
+$pullquote-font-weight: normal !default;
+$pullquote-line-height: 1.6em !default;
+$pullquote-border-top-width: 1px !default;
+$pullquote-border-top-style: solid !default;
+$pullquote-border-top-color: black !default;
+$pullquote-border-bottom-width: 1px !default;
+$pullquote-border-bottom-style: solid !default;
+$pullquote-border-bottom-color: black !default;
+$pullquote-padding-top: 5px !default;
+$pullquote-padding-bottom: 5px !default;
+$pullquote-margin-top: 20px !default;
+$pullquote-margin-bottom: 20px !default;
 
 // Columns
+$column-twocolumn-font-size: 0.8em !default;
+$column-line-height: 1.2em !default;
+
+$column-threecolumn-text-align: left !default;
 
 // Sidebar
 $sidebar-font-size: 0.8em !default;
@@ -119,6 +137,10 @@ div.sidebar {
 .textbox.key-takeaways h3,
 .textbox.examples h3 {
   font-size: 0.8em;
+}
+
+.textbox p {
+  margin-bottom: 0;
 }
 
 @if $type == "epub" {

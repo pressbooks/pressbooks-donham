@@ -71,6 +71,13 @@ $copyright-margin-top: (epub: 0, prince: 2cm, web: 2em) !default;
 $section-license-font-style: normal !default;
 $section-license-margin-top: 0em !default;
 
+//Index
+$index-para-font-size: 9pt !default;
+$index-para-padding-left: 30px !default;
+$index-para-indent: -30px !default;
+$index-sub-entry-padding-left: 30px !default;
+
+
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/pages';
 
@@ -85,6 +92,14 @@ h4.publisher {
 h5.publisher-city {
     float: none;
     color: black;
+}
+
+div.index div div {
+  line-height: 1.6em;
+}
+
+div.index div p {
+  line-height: 1.4em;
 }
 
 @if $type == 'epub' {

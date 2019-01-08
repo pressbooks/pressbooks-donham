@@ -45,6 +45,7 @@ $chapter-aphorism-color: $color-2 !default;
 $image-caption-text-color: $color-1 !default;
 
 // Table
+$line-color-1: $color-2 !default;
 
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/colors';

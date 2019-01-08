@@ -15,6 +15,8 @@ $image-caption-font-size: 0.875em !default;
 $image-caption-margin-top: (epub: 0, prince: .6em, web: 0) !default;
 $image-caption-font-style: italic !default;
 
+$image-caption-line-height: (prince: 1.2em, epub: 1.2em, web: 1.2em) !default;
+
 // Interactive Content
 $interactive-content-font-style: normal !default;
 $interactive-content-text-indent: 0 !default;
