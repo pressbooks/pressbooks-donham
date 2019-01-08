@@ -6,14 +6,17 @@
 }
 
 @else if $type == "web" {
+  $section-title-text-transform: uppercase !default;
 
+  $section-title-font-weight: 600 !default;
+  $section-title-line-height: 1.5em !default;
 }
 
 // Section Header
-$section-title-block-margin-bottom: (epub: 2em, prince: 2.5cm, web: 2em) !default;
-$section-title-block-margin-top: (epub: 1em, prince: 3.05cm, web: 3em) !default;
+$section-title-block-margin-bottom: (epub: 2em, prince: 2.5cm, web: 5.4em) !default;
+$section-title-block-margin-top: (epub: 1em, prince: 3.05cm, web: 5.4em) !default;
 $section-header-margin-top: $section-title-block-margin-top !default;
-$section-title-font-size: (epub: 1.5em, prince: 1.635em, web: 2em) !default;
+$section-title-font-size: (epub: 1.5em, prince: 1.635em, web: 1.2em) !default;
 $section-title-margin-top: (epub: 0, prince: 0em, web: 0) !default;
 $section-title-margin-bottom: (epub: 2em, prince: 2.5cm, web: 2em) !default;
 $section-title-font-weight: bold !default;
@@ -50,9 +53,9 @@ $aphorism-cite-align: right !default;
 $aphorism-cite-font-style: normal !default;
 
 // Front Matter
-$front-matter-title-font-size: (epub: 1.7em, prince: 1.88em, web: 2em) !default;
-$front-matter-title-margin-top: (epub: 1em, prince: -.175em, web: 0) !default;
-$front-matter-title-margin-bottom: (epub: 3em, prince: -1.85cm, web: 2em) !default;
+$front-matter-title-font-size: (epub: 1.7em, prince: 1.88em, web: 1.2em) !default;
+$front-matter-title-margin-top: (epub: 1em, prince: -.175em, web: 4.65em) !default;
+$front-matter-title-margin-bottom: (epub: 3em, prince: -1.85cm, web: 4.65em) !default;
 
 // TOC Title
 $toc-title-font-size: (epub: 1.7em, prince: 1.88em, web: 2em) !default;
@@ -76,19 +79,18 @@ $part-title-font-size:(epub: 1.7em, prince: 2.6em, web: 2.5em) !default;
 
 // Chapter Number
 $chapter-number-display: inline !default;
-$chapter-number-font-size: (epub: 1.3em, prince: 1.25em, web: 1em) !default;
+$chapter-number-font-size: (epub: 1.3em, prince: 1.25em, web: .875em) !default;
 $chapter-number-margin-right: (epub: 0, prince: .5em, web: 0) !default;
 
 // Chapter Title
 $chapter-title-display: inline !default;
-$chapter-title-margin-top: (epub: 1.6em, prince: 1em, web: 0) !default;
-$chapter-title-margin-bottom: (epub: 4.6em, prince: 2.5cm, web: 2em) !default;
+$chapter-title-margin-top: (epub: 1.6em, prince: 1em, web: 5.4em) !default;
+$chapter-title-margin-bottom: (epub: 4.6em, prince: 2.5cm, web: 5.55em) !default;
 $chapter-title-line-height: 1.83em !default;
 
 // Back Matter
 $back-matter-title-align: left !default;
 $back-matter-title-font-size: 1.6em !default;
-// $back-matter-title-margin-top: (epub: 0, prince: -2.55cm, web: 0) !default;
 $back-matter-title-margin-bottom: (epub: 2em, prince: .65cm, web: 2em) !default;
 
 // Override variables above this line, using the !default flag to allow further overrides.
@@ -128,5 +130,8 @@ blockquote.aphorism {
 }
 
 @if $type == 'web'{
-
+  section.chapter header {
+    text-align: right;
+    display: block;
+  }
 }

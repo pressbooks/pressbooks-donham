@@ -5,7 +5,6 @@
 
   $hx-margin-bottom: 1em !default;
   $hx-margin-top: 1em !default;
-  // $hx-line-height: 1.5em !default;
 
   $h1-margin-top: 1em !default;
   $h1-font-size: 1.2em !default;
@@ -50,10 +49,11 @@
 }
 
 @if $type == 'web' {
+  $hx-line-height: 1.5em !default;
 }
 
 // Body
-$body-font-size: (epub: medium, prince: 11pt, web: 14pt) !default;
+$body-font-size: (epub: medium, prince: 11pt, web: 1.125rem) !default;
 
 // Para
 $para-indent: 1.5em !default;
