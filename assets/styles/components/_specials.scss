@@ -7,17 +7,6 @@
   $hr-break-symbols-margin-bottom: 20px !default;
 
   $textbox-align: justify !default;
-
-  $pullquote-width: 70% !default;
-  $pullquote-font-size: 1.25em !default;
-  $pullquote-font-weight: bold !default;
-  $pullquote-line-height: 1.2em !default;
-  $pullquote-border-top-width: 0 !default;
-  $pullquote-border-top-style: none !default;
-  $pullquote-border-top-color: transparent !default;
-  $pullquote-border-bottom-width: 0 !default;
-  $pullquote-border-bottom-style: none !default;
-  $pullquote-border-bottom-color: transparent !default;
 }
 
 @if $type == "web" {
@@ -174,6 +163,7 @@ div.sidebar {
     margin: 10px auto;
     text-align: center;
     width: 20%;
+    border-top: 1px solid grey;
   }
 }
 
@@ -188,6 +178,7 @@ div.sidebar {
     font-size: 1em;
     font-style: normal;
   }
+
   hr.before-footnotes {
     width: 100%;
     border-top: 1px solid grey;

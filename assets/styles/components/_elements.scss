@@ -201,6 +201,10 @@ table + p {
   h5 {
     margin-left: 2em;
   }
+
+  .indent {
+    text-indent: 1em;
+  }
 }
 
 @if $type == 'web' {
@@ -208,4 +212,7 @@ table + p {
     line-height: 1.5em;
   }
 
+  .indent {
+    text-indent: 1em;
+  }
 }

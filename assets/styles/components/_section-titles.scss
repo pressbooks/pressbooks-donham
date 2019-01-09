@@ -80,6 +80,7 @@ $part-title-text-transform: none !default;
 $part-title-font-weight: bold !default;
 $part-title-align: right !default;
 $part-title-margin-top: (epub: 2em, prince: 1em, web: 0) !default;
+$part-title-margin-left: (epub: 20%, prince: 0, web: 0) !default;
 $part-title-font-size:(epub: 1.7em, prince: 2.6em, web: 2.5em) !default;
 
 // Chapter Number
