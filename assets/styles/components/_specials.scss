@@ -9,10 +9,28 @@
   $textbox-align: justify !default;
 
   $pullquote-width: 70% !default;
+  $pullquote-font-size: 1.25em !default;
+  $pullquote-font-weight: bold !default;
+  $pullquote-line-height: 1.2em !default;
+  $pullquote-border-top-width: 0 !default;
+  $pullquote-border-top-style: none !default;
+  $pullquote-border-top-color: transparent !default;
+  $pullquote-border-bottom-width: 0 !default;
+  $pullquote-border-bottom-style: none !default;
+  $pullquote-border-bottom-color: transparent !default;
 }
 
 @if $type == "web" {
-
+  $pullquote-width: 70% !default;
+  $pullquote-font-size: 1.25em !default;
+  $pullquote-font-weight: bold !default;
+  $pullquote-line-height: 1.2em !default;
+  $pullquote-border-top-width: 0 !default;
+  $pullquote-border-top-style: none !default;
+  $pullquote-border-top-color: transparent !default;
+  $pullquote-border-bottom-width: 0 !default;
+  $pullquote-border-bottom-style: none !default;
+  $pullquote-border-bottom-color: transparent !default;
 }
 
 // Section Breaks
@@ -38,8 +56,6 @@ $textbox-text-align: justify !default;
 // Edu Textbox
 $edu-header-font-weight: normal !default;
 $edu-header-font-size: .9em !default;
-
-// Sidebar Textbox
 
 // Footnotes
 $footnote-font-size: (epub: 0.9em, prince: 0.75em, web: 0.9em) !default;
@@ -107,7 +123,6 @@ div.sidebar {
 }
 
 .sidebar ul {
-  // padding-left: 1em;
   margin-left: 1em;
 }
 .sidebar li {
@@ -160,5 +175,18 @@ div.sidebar {
 }
 
 @if $type == "web" {
+  .sidebar ul {
+    padding-left: .75em;
+    margin-left: .75em;
+    padding-right: .75em;
+  }
 
+  .sidebar h3 {
+    font-size: 1em;
+    font-style: normal;
+  }
+  hr.before-footnotes {
+    width: 100%;
+    border-top: 1px solid grey;
+  }
 }

@@ -7,9 +7,14 @@
 
 @else if $type == "web" {
   $section-title-text-transform: uppercase !default;
+  $section-title-font-weight: bold !default;
 
   $section-title-font-weight: 600 !default;
   $section-title-line-height: 1.5em !default;
+  $aphorism-align: right !default;
+
+  $back-matter-title-align: right !default;
+  $back-matter-title-font-size: 1.2em !default;
 }
 
 // Section Header
@@ -134,4 +139,9 @@ blockquote.aphorism {
     text-align: right;
     display: block;
   }
+
+  .aphorism,
+  blockquote.aphorism {
+  width: 100%;
+}
 }
