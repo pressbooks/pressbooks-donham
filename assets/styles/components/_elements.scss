@@ -81,7 +81,7 @@
 $body-font-size: (epub: medium, prince: 11pt, web: 1.125rem) !default;
 
 // Para
-$para-indent: 1.5em !default;
+$para-indent: 2em !default;
 $para-align: (epub: justify, prince: justify, web: initial) !default;
 
 // Headers
@@ -179,6 +179,10 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0
+}
+
+.indent {
+  text-indent: 2em;
 }
 
 ul li li li {

@@ -50,7 +50,7 @@ $textbox-padding-bottom: 10px !default;
 $textbox-padding-left: 10px !default;
 $textbox-margin-top: 1.1em !default;
 $textbox-margin-bottom: 1.1em !default;
-$textbox-text-indent: 1em !default;
+$textbox-text-indent: 0 !default;
 $textbox-text-align: justify !default;
 
 // Edu Textbox
@@ -123,8 +123,11 @@ div.sidebar {
 }
 
 .sidebar ul {
-  margin-left: 1em;
+  margin-left: .75em;
+  padding-left: .75em;
+  padding-right: .75em;
 }
+
 .sidebar li {
   margin-top: 0em;
 }

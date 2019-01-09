@@ -66,6 +66,7 @@ $epigraph-font-style: normal !default;
 // Copyright
 $copyright-float: bottom !default;
 $copyright-margin-top: (epub: 0, prince: 2cm, web: 2em) !default;
+$copyright-line-height: 1.4em !default;
 
 // Section License
 $section-license-font-style: normal !default;
@@ -76,7 +77,6 @@ $index-para-font-size: 9pt !default;
 $index-para-padding-left: 30px !default;
 $index-para-indent: -30px !default;
 $index-sub-entry-padding-left: 30px !default;
-
 
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/pages';
