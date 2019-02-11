@@ -3,55 +3,25 @@
   "description": "This theme is named after Wallace Donham, Dean of Harvard Business School from 1919 to 1942. The Donham theme is a light, modern theme, equally effective for non-fiction and fiction. Body font is Tinos, and Header font is Galdeano. An earlier version of this theme was commissioned by Harvard Business Review Press.",
   "author": "Pressbooks (Book Oven Inc.)",
   "engines": {
-    "node": ">= 6.9.4"
+    "node": ">= 10.15.1"
   },
+  "license": "gpl-3.0-or-later",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pressbooks/pressbooks-donham.git"
   },
   "dependencies": {},
   "devDependencies": {
-    "stylelint": "^9.10.1",
-    "stylelint-config-standard": "^18.2.0"
+    "pressbooks-build-tools": "^1.2.0"
   },
-  "scripts": {},
+  "scripts": {
+    "fix": "npm run -s fix:styles",
+    "fix:styles": "node_modules/stylelint/bin/stylelint.js --fix \"assets/styles/**/*.scss\" --syntax scss",
+    "lint": "npm run -s lint:styles",
+    "lint:styles": "node_modules/stylelint/bin/stylelint.js  \"assets/styles/**/*.scss\" --syntax scss",
+    "test": "npm run -s lint"
+  },
   "stylelint": {
-    "extends": "stylelint-config-standard",
-    "rules": {
-      "indentation": 2,
-      "media-feature-name-no-unknown": [
-        true,
-        {
-          "ignoreMediaFeatureNames": [
-            "min--moz-device-pixel-ratio"
-          ]
-        }
-      ],
-      "property-no-unknown": [
-        true,
-        {
-          "ignoreProperties": [
-            "footnote-style-position",
-            "hyphenate-before",
-            "hyphenate-after",
-            "hyphenate-lines",
-            "margin-inside",
-            "margin-outside",
-            "prince-bookmark-level",
-            "prince-footnote-policy",
-            "prince-image-resolution",
-            "prince-page-group"
-          ]
-        }
-      ],
-      "selector-pseudo-element-no-unknown": [
-        true,
-        {
-          "ignorePseudoElements": [
-            "footnote-call"
-          ]
-        }
-      ]
-    }
+    "extends": "./node_modules/pressbooks-build-tools/config/stylelint.js"
   }
 }

@@ -8,9 +8,6 @@ $color-4: #e6e6e6 !default; //shaded
   $title-page-title-color: $color-2 !default;
 }
 
-@if $type == "web" {
-}
-
 // Headers
 $h4-color: $color-2 !default;
 $h5-color: $color-2 !default;

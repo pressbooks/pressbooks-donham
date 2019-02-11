@@ -10,9 +10,6 @@
   $copyright-align: justify !default;
 }
 
-@if $type == "web" {
-}
-
 // Title Page Title
 $title-title-font-size: (epub: 2em, prince: 2.545em, web: 2em) !default;
 $title-title-align: right !default;
@@ -100,8 +97,4 @@ div.index div div {
 
 div.index div p {
   line-height: 1.4em;
-}
-
-@if $type == 'epub' {
-
 }
