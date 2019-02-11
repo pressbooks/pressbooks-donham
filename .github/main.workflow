@@ -1,14 +1,15 @@
 workflow "Lint Styles" {
   on = "push"
-  resolves = ["Lint Styles"]
+  resolves = ["Lint"]
 }
 
 action "Install" {
-  uses = "actions/npm@4633da3702a5366129dca9d8cc3191476fc3433c"
+  uses = "actions/npm@master"
   args = "ci"
 }
 
 action "Lint" {
-  uses = "actions/npm@4633da3702a5366129dca9d8cc3191476fc3433c"
+  needs = "Install"
+  uses = "actions/npm@master"
   args = "test"
 }
