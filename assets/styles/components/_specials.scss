@@ -1,0 +1,186 @@
+// Special Elements
+
+@if $type == 'epub' {
+  $hr-margin-top: 10px !default;
+  $hr-margin-bottom: 10px !default;
+
+  $hr-break-symbols-margin-bottom: 20px !default;
+
+  $textbox-align: justify !default;
+}
+
+@if $type == "web" {
+  $pullquote-width: 70% !default;
+  $pullquote-font-size: 1.25em !default;
+  $pullquote-font-weight: bold !default;
+  $pullquote-line-height: 1.2em !default;
+  $pullquote-border-top-width: 0 !default;
+  $pullquote-border-top-style: none !default;
+  $pullquote-border-top-color: transparent !default;
+  $pullquote-border-bottom-width: 0 !default;
+  $pullquote-border-bottom-style: none !default;
+  $pullquote-border-bottom-color: transparent !default;
+}
+
+// Section Breaks
+$hr-break-symbols-font-size: 18pt !default;
+$hr-break-symbols-margin-top: 1.25em !default;
+$hr-break-symbols-margin-bottom: 2em !default;
+
+// Dropcap
+$first-character-font-size: 100% !default;
+
+// Textboxes
+$textbox-font-size: 1em !default;
+$textbox-line-height: 1.4em !default;
+$textbox-padding-top: 10px !default;
+$textbox-padding-right: 10px !default;
+$textbox-padding-bottom: 10px !default;
+$textbox-padding-left: 10px !default;
+$textbox-margin-top: 1.1em !default;
+$textbox-margin-bottom: 1.1em !default;
+$textbox-text-indent: 0 !default;
+$textbox-text-align: justify !default;
+
+// Edu Textbox
+$edu-header-font-weight: normal !default;
+$edu-header-font-size: .9em !default;
+
+// Footnotes
+$footnote-font-size: (epub: 0.9em, prince: 0.75em, web: 0.9em) !default;
+$footnote-line-height: 1.4em !default;
+
+$footnote-indent: 1em !default;
+$footnote-number-marker-line-height: 1.4em !default;
+
+// PullQuotes
+$pullquote-width: 45% !default;
+$pullquote-font-size: 1em !default;
+$pullquote-font-weight: normal !default;
+$pullquote-line-height: 1.6em !default;
+$pullquote-border-top-width: 1px !default;
+$pullquote-border-top-style: solid !default;
+$pullquote-border-top-color: black !default;
+$pullquote-border-bottom-width: 1px !default;
+$pullquote-border-bottom-style: solid !default;
+$pullquote-border-bottom-color: black !default;
+$pullquote-padding-top: 5px !default;
+$pullquote-padding-bottom: 5px !default;
+$pullquote-margin-top: 20px !default;
+$pullquote-margin-bottom: 20px !default;
+
+// Columns
+$column-twocolumn-font-size: 0.8em !default;
+$column-line-height: 1.2em !default;
+
+$column-threecolumn-text-align: left !default;
+
+// Sidebar
+$sidebar-font-size: 0.8em !default;
+$sidebar-line-height: 1.6em !default;
+$sidebar-padding-top: .75em !default;
+$sidebar-padding-right: .75em !default;
+$sidebar-padding-bottom: .75em !default;
+$sidebar-padding-left: .75em !default;
+$sidebar-margin-left: .75em !default;
+
+// Override variables above this line, using the !default flag to allow further overrides.
+@import 'variables/specials';
+
+// Add custom SCSS below these imports and includes.
+@import 'components/specials';
+
+.footnote {
+  footnote-style-position: inside;
+}
+
+div.sidebar {
+  width: 35%;
+  float: right;
+  margin-left: 0.75em;
+  margin-right: 0px;
+  background-color: rgb(230, 230, 230);
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: left;
+  padding: 0.75em;
+}
+
+.sidebar h3 {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.sidebar ul {
+  margin-left: .75em;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.sidebar li {
+  margin-top: 0em;
+}
+
+.textbox.exercises ol li ,
+.textbox.learning-objectives ol li ,
+.textbox.key-takeaways ol li ,
+.textbox.examples ol li {
+  text-indent: 0;
+  margin-top: 0;
+  line-height: 1.6em;
+}
+
+.textbox.exercises ol,
+.textbox.learning-objectives ol,
+.textbox.key-takeaways ol,
+.textbox.examples ol {
+  padding-left: 1em;
+  margin-top: 0;
+  margin-left: 1em;
+}
+
+.textbox.exercises h3,
+.textbox.learning-objectives h3,
+.textbox.key-takeaways h3,
+.textbox.examples h3 {
+  font-size: 0.8em;
+}
+
+.textbox p {
+  margin-bottom: 0;
+}
+
+@if $type == "epub" {
+  .textbox li {
+    text-indent: 0;
+  }
+
+  div.footnotes {
+    margin: 20px 10px 40px 40px;
+  }
+
+  hr.before-footnotes {
+    margin: 10px auto;
+    text-align: center;
+    width: 20%;
+    border-top: 1px solid grey;
+  }
+}
+
+@if $type == "web" {
+  .sidebar ul {
+    padding-left: .75em;
+    margin-left: .75em;
+    padding-right: .75em;
+  }
+
+  .sidebar h3 {
+    font-size: 1em;
+    font-style: normal;
+  }
+
+  hr.before-footnotes {
+    width: 100%;
+    border-top: 1px solid grey;
+  }
+}

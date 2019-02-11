@@ -1,0 +1,100 @@
+// Pages
+
+@if $type == "epub" {
+  $title-subtitle-text-transform: none !default;
+  $title-subtitle-margin-top: 1em !default;
+
+  $dedication-font-style: normal !default;
+  $epigraph-font-style: normal !default;
+
+  $copyright-align: justify !default;
+}
+
+// Title Page Title
+$title-title-font-size: (epub: 2em, prince: 2.545em, web: 2em) !default;
+$title-title-align: right !default;
+$title-title-font-weight: bold !default;
+$title-title-line-height: 1.6em !default;
+$title-title-margin-top: (epub: 30%, prince: 6cm, web: 3em) !default;
+
+// Title Page Subtitle
+$title-subtitle-font-size:(epub: 1.6em, prince: 1.82em, web: 1.25em) !default;
+$title-subtitle-margin-top: 1.5cm !default;
+$title-subtitle-align: right !default;
+$title-subtitle-font-style: none !default;
+$title-subtitle-font-weight: bold !default;
+$title-subtitle-text-transform: uppercase !default;
+
+// Title Page Author
+$title-author-font-size:(epub: 1em, prince: 1.54em, web: 1em) !default;
+$title-author-margin-top: (epub: 1em, prince: 1.5cm, web: 2em) !default;
+$title-author-text-transform: uppercase !default;
+$title-author-align: right !default;
+$title-author-letter-spacing: none !default;
+$title-author-word-spacing: none !default;
+
+// Title Page Publisher
+$title-publisher-align: right !default;
+$title-publisher-font-weight: bold !default;
+$title-publisher-font-size: 1.075em !default;
+$title-publisher-letter-spacing: none !default;
+$title-publisher-word-spacing: none !default;
+$title-publisher-margin-top: (epub: 1.5em, prince: 1.5em, web: 0) !default;
+$title-publisher-margin-bottom: (epub: 0.5em, prince: 2em, web: 0.5em) !default;
+
+// Title Page Publisher City
+$title-publisher-city-align: right !default;
+$title-publisher-city-font-size: .9em !default;
+$title-publisher-city-font-weight: bold !default;
+$title-publisher-city-letter-spacing: normal !default;
+$title-publisher-city-word-spacing: normal !default;
+$title-publisher-city-text-transform: none !default;
+
+//Dedication
+$dedication-margin-right: 0 !default;
+$dedication-margin-left: 0 !default;
+
+//Epigraph
+$epigraph-margin-right: 0 !default;
+$epigraph-margin-left: 0 !default;
+$epigraph-align: justify !default;
+$epigraph-font-style: normal !default;
+
+// Copyright
+$copyright-float: bottom !default;
+$copyright-margin-top: (epub: 0, prince: 2cm, web: 2em) !default;
+$copyright-line-height: 1.4em !default;
+
+// Section License
+$section-license-font-style: normal !default;
+$section-license-margin-top: 0em !default;
+
+//Index
+$index-para-font-size: 9pt !default;
+$index-para-padding-left: 30px !default;
+$index-para-indent: -30px !default;
+$index-sub-entry-padding-left: 30px !default;
+
+// Override variables above this line, using the !default flag to allow further overrides.
+@import 'variables/pages';
+
+// Add custom SCSS below these imports and includes.
+@import 'components/pages';
+
+h4.publisher {
+    float: none;
+    color: black;
+}
+
+h5.publisher-city {
+    float: none;
+    color: black;
+}
+
+div.index div div {
+  line-height: 1.6em;
+}
+
+div.index div p {
+  line-height: 1.4em;
+}

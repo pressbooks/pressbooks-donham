@@ -1,0 +1,51 @@
+// Colors
+$color-1: initial !default;
+$color-2: black !default;
+$color-3: #acacac !default; //second hightlight color, or black
+$color-4: #e6e6e6 !default; //shaded
+
+@if $type == "epub" {
+  $title-page-title-color: $color-2 !default;
+}
+
+// Headers
+$h4-color: $color-2 !default;
+$h5-color: $color-2 !default;
+$h6-color: $color-2 !default;
+
+// Title Page
+$title-page-title-color: $color-3 !default;
+$title-page-subtitle-color: $color-2 !default;
+$title-page-publisher-color: $color-2 !default;
+$title-page-publisher-city-color: $color-2 !default;
+
+// Front Matter
+$dedication-para-color: $color-2 !default;
+$epigraph-para-color: $color-2 !default;
+
+// Running Content
+$runninghead-color: $color-2 !default;
+$page-number-color: $color-2 !default;
+
+// Part
+$part-number-color: $color-2 !default;
+
+// Chapter
+$chapter-number-color: $color-2 !default;
+$chapter-subtitle-color: $color-2 !default;
+$chapter-author-color: $color-2 !default;
+$chapter-aphorism-color: $color-2 !default;
+
+// Pullquotes
+
+// Media
+$image-caption-text-color: $color-1 !default;
+
+// Table
+$line-color-1: $color-2 !default;
+
+// Override variables above this line, using the !default flag to allow further overrides.
+@import 'variables/colors';
+
+// Add custom SCSS below these imports and includes.
+@import 'components/colors';
