@@ -10,6 +10,10 @@
   $copyright-align: justify !default;
 }
 
+// Half Title
+$title-half-title-font-size: 2.25em !default;
+$title-half-title-font-weight: bold !default;
+
 // Title Page Title
 $title-title-font-size: (epub: 2em, prince: 2.545em, web: 2em) !default;
 $title-title-align: right !default;
@@ -81,14 +85,9 @@ $index-sub-entry-padding-left: 30px !default;
 // Add custom SCSS below these imports and includes.
 @import 'components/pages';
 
-h4.publisher {
-    float: none;
-    color: black;
-}
-
-h5.publisher-city {
-    float: none;
-    color: black;
+#half-title-page h1.title {
+  float: bottom;
+  text-align: right;
 }
 
 div.index div div {

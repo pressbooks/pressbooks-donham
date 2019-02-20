@@ -194,14 +194,6 @@ table + p {
 }
 
 @if $type == 'epub' {
-  h3 {
-    margin-left: 2em;
-  }
-
-  h5 {
-    margin-left: 2em;
-  }
-
   .indent {
     text-indent: 1em;
   }
