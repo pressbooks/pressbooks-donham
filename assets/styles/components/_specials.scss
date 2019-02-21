@@ -7,6 +7,11 @@
   $hr-break-symbols-margin-bottom: 20px !default;
 
   $textbox-align: justify !default;
+
+  $textbox-padding-top: 1.5em !default;
+  $textbox-padding-right: 1.5em !default;
+  $textbox-padding-bottom: 1.5em !default;
+  $textbox-padding-left: 1.5em !default;
 }
 
 @if $type == "web" {
@@ -28,7 +33,6 @@ $hr-break-symbols-margin-top: 1.25em !default;
 $hr-break-symbols-margin-bottom: 2em !default;
 
 // Dropcap
-// $first-character-font-size: 300% !default;
 
 // Textboxes
 $textbox-font-size: 1em !default;
@@ -164,6 +168,15 @@ div.sidebar {
     text-align: center;
     width: 20%;
     border-top: 1px solid grey;
+  }
+
+  .pullquote,
+  .pullquote-left,
+  .pullquote--left,
+  .pullquote-right,
+  .pullquote--right {
+    page-break-inside: initial;
+    break-inside: initial;
   }
 }
 

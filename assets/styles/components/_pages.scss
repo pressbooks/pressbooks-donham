@@ -10,6 +10,10 @@
   $copyright-align: justify !default;
 }
 
+// Before Title
+$before-title-title-block-margin-top: (epub: 1em, prince: 3.05cm, web: 5.4em) !default;
+$before-title-title-block-margin-bottom: (epub: 2em, prince: 2.5cm, web: 5.4em) !default;
+
 // Half Title
 $title-half-title-font-size: 2.25em !default;
 $title-half-title-font-weight: bold !default;
@@ -72,12 +76,6 @@ $copyright-line-height: 1.4em !default;
 // Section License
 $section-license-font-style: normal !default;
 $section-license-margin-top: 0em !default;
-
-//Index
-$index-para-font-size: 9pt !default;
-$index-para-padding-left: 30px !default;
-$index-para-indent: -30px !default;
-$index-sub-entry-padding-left: 30px !default;
 
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/pages';
