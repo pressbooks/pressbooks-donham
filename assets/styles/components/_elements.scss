@@ -7,37 +7,29 @@
   $hx-margin-top: 1em !default;
 
   $h1-margin-top: 1em !default;
-  $h1-font-size: 1.2em !default;
   $h1-font-weight: bold !default;
   $h1-align: justify !default;
   $h1-line-height: 1.5em !default;
 
   $h2-margin-top: 1em !default;
-  $h2-font-size: 1.1em !default;
   $h2-align: justify !default;
   $h2-margin-bottom: 1em !default;
   $h2-line-height: 1.5em !default;
 
   $h3-margin-top: 1em !default;
-  $h3-font-size: .75em !default;
-  $h3-text-transform: uppercase !default;
   $h3-align: justify !default;
   $h3-line-height: 1.5em !default;
 
   $h4-margin-top: 1.25em !default;
-  $h4-font-size: .75em !default;
-  $h4-text-transform: uppercase !default;
   $h4-align: justify !default;
   $h4-line-height: 1.5em !default;
 
   $h5-margin-top: 1.67em !default;
-  $h5-font-size: 1em !default;
   $h5-font-weight: bold !default;
   $h5-align: justify !default;
   $h5-line-height: 1.5em !default;
 
   $h6-margin-top: 2.33em !default;
-  $h6-font-size: 0.67em !default;
   $h6-font-weight: bold !default;
   $h6-align: justify !default;
   $h6-line-height: 1.5em !default;
@@ -97,27 +89,27 @@ $h1-font-weight: normal !default;
 // H2
 $h2-margin-top: 1.2em !default;
 $h2-margin-bottom: 15px !default;
-$h2-font-size: 1.0875em !default;
+$h2-font-size: 1.215em !default;
 $h2-align: left !default;
 
 // H3
 $h3-margin-top: 1.525em !default;
-$h3-font-size: 0.815em !default;
+$h3-font-size: 1.067em !default;
 $h3-align: left !default;
 $h3-font-style: normal !default;
 
 // H4
 $h4-margin-top: 1.75em !default;
-$h4-font-size:  0.815em !default;
+$h4-font-size: 0.937em !default;
 
 // H5
 $h5-margin-top: 1.75em !default;
-$h5-font-size: .905em !default;
+$h5-font-size: 0.878em !default;
 $h5-font-style: normal !default;
 
 // H6
 $h6-margin-top: 2.6em !default;
-$h6-font-size: 0.73em !default;
+$h6-font-size: 0.81em !default;
 
 // Cite
 $cite-text-transform: none;
@@ -169,12 +161,6 @@ $pre-margin-bottom: 1.15em !default;
 // Add custom SCSS below these imports and includes.
 @import 'components/elements';
 
-ol.decimal li::before,
-ol.harvard li::before,
-ol.legal li::before {
-  width: auto !important;
-}
-
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -194,14 +180,6 @@ table + p {
 }
 
 @if $type == 'epub' {
-  h3 {
-    margin-left: 2em;
-  }
-
-  h5 {
-    margin-left: 2em;
-  }
-
   .indent {
     text-indent: 1em;
   }
