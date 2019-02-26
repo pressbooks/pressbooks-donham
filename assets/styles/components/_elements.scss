@@ -161,12 +161,6 @@ $pre-margin-bottom: 1.15em !default;
 // Add custom SCSS below these imports and includes.
 @import 'components/elements';
 
-ol.decimal li::before,
-ol.harvard li::before,
-ol.legal li::before {
-  width: auto !important;
-}
-
 p {
   margin-top: 0;
   margin-bottom: 0;
