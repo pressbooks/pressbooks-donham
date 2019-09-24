@@ -1,0 +1,16 @@
+on: push
+name: Lint Styles
+jobs:
+  install:
+    name: Install
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Install
+      uses: actions/npm@master
+      with:
+        args: ci
+    - name: Lint
+      uses: actions/npm@master
+      with:
+        args: test
