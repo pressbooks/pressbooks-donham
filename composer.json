@@ -9,6 +9,11 @@
             "email": "code@pressbooks.com"
         }
     ],
+    "keywords": [
+        "academic",
+        "literary",
+        "nonfiction"
+    ],
     "require": {
         "composer/installers": "~1.6"
     },
