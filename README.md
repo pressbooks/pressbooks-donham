@@ -4,8 +4,8 @@ This theme is named after Wallace Donham, Dean of Harvard Business School from 1
 
 ## Changelog
 
-### 1.7.1
+### 2.0.0
 
-* See: https://github.com/pressbooks/pressbooks-donham/releases/tag/1.7.1
+* See: https://github.com/pressbooks/pressbooks-donham/releases/tag/2.0.0
 * Full release history available at: https://github.com/pressbooks/pressbooks-donham/releases
 
