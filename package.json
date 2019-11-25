@@ -11,14 +11,13 @@
     "url": "git+https://github.com/pressbooks/pressbooks-donham.git"
   },
   "dependencies": {},
-  "devDependencies": {
-    "pressbooks-build-tools": "^1.2.0"
-  },
+  "devDependencies": {},
   "scripts": {
+    "install-build-tools": "npm install --no-save pressbooks-build-tools",
     "fix": "npm run -s fix:styles",
-    "fix:styles": "node_modules/stylelint/bin/stylelint.js --fix \"assets/styles/**/*.scss\" --syntax scss",
+    "fix:styles": "cross-env NODE_ENV=development node_modules/stylelint/bin/stylelint.js --fix \"assets/styles/**/*.scss\" --syntax scss",
     "lint": "npm run -s lint:styles",
-    "lint:styles": "node_modules/stylelint/bin/stylelint.js  \"assets/styles/**/*.scss\" --syntax scss",
+    "lint:styles": "cross-env NODE_ENV=development node_modules/stylelint/bin/stylelint.js  \"assets/styles/**/*.scss\" --syntax scss",
     "test": "npm run -s lint"
   },
   "stylelint": {
