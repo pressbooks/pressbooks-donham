@@ -104,7 +104,7 @@ $back-matter-title-margin-bottom: (epub: 2em, prince: .65cm, web: 2em) !default;
 // Add custom SCSS below these imports and includes.
 @import 'components/section-titles';
 
-h6.short-title {
+.short-title {
   display: none;
 }
 

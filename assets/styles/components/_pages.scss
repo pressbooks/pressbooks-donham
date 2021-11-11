@@ -83,7 +83,7 @@ $section-license-margin-top: 0em !default;
 // Add custom SCSS below these imports and includes.
 @import 'components/pages';
 
-#half-title-page h1.title {
+#half-title-page .title {
   float: bottom;
   text-align: right;
 }
