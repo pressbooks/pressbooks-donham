@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Maintain dependencies for Composer
+  - package-ecosystem: "composer"
+    # Look for `composer.json` and `composer.lock` files in the root directory
+    directory: "/"
+    # Check for updates weekly
+    schedule:
+      interval: "weekly"
+    allow:
+      # Allow direct updates only (for packages named in composer.json)
+      - dependency-type: "direct"
+    # Allow up to 10 open pull requests for composer dependencies
+    open-pull-requests-limit: 10

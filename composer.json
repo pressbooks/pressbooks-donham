@@ -15,10 +15,10 @@
         "nonfiction"
     ],
     "require": {
-        "composer/installers": "~1.6"
+        "composer/installers": "^2"
     },
     "require-dev": {
-        "pressbooks/coding-standards": "^1.0"
+        "pressbooks/coding-standards": "^1.1"
     },
     "archive": {
         "exclude": [
