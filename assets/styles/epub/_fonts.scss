@@ -1,8 +1,7 @@
 @import '_font-stack-epub'; // Dynamically generated
 
 $serif-epub: serif !default;
-
-$font-1: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, Times, $serif-epub;
-$font-2: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, Times, $serif-epub;
-$font-3: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, Times, $serif-epub;
+$font-1: "Palatino Linotype", "Book Antiqua", palatino, georgia, times, $serif-epub;
+$font-2: "Palatino Linotype", "Book Antiqua", palatino, georgia, times, $serif-epub;
+$font-3: "Palatino Linotype", "Book Antiqua", palatino, georgia, times, $serif-epub;
 
