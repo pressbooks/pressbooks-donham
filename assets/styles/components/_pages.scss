@@ -3,10 +3,8 @@
 @if $type == "epub" {
   $title-subtitle-text-transform: none !default;
   $title-subtitle-margin-top: 1em !default;
-
   $dedication-font-style: normal !default;
   $epigraph-font-style: normal !default;
-
   $copyright-align: justify !default;
 }
 
@@ -26,7 +24,7 @@ $title-title-line-height: 1.6em !default;
 $title-title-margin-top: (epub: 30%, prince: 6cm, web: 3em) !default;
 
 // Title Page Subtitle
-$title-subtitle-font-size:(epub: 1.6em, prince: 1.82em, web: 1.25em) !default;
+$title-subtitle-font-size: (epub: 1.6em, prince: 1.82em, web: 1.25em) !default;
 $title-subtitle-margin-top: 1.5cm !default;
 $title-subtitle-align: right !default;
 $title-subtitle-font-style: none !default;
@@ -34,7 +32,7 @@ $title-subtitle-font-weight: bold !default;
 $title-subtitle-text-transform: uppercase !default;
 
 // Title Page Author
-$title-author-font-size:(epub: 1em, prince: 1.54em, web: 1em) !default;
+$title-author-font-size: (epub: 1em, prince: 1.54em, web: 1em) !default;
 $title-author-margin-top: (epub: 1em, prince: 1.5cm, web: 2em) !default;
 $title-author-text-transform: uppercase !default;
 $title-author-align: right !default;
@@ -47,6 +45,7 @@ $title-publisher-font-weight: normal !default;
 $title-publisher-font-size: .9em !default;
 $title-publisher-letter-spacing: none !default;
 $title-publisher-word-spacing: none !default;
+
 // $title-publisher-margin-top: (epub: 1.5em, prince: 1.5em, web: 0) !default;
 // $title-publisher-margin-bottom: (epub: 0.5em, prince: 2em, web: 0.5em) !default;
 
@@ -58,11 +57,11 @@ $title-publisher-city-letter-spacing: normal !default;
 $title-publisher-city-word-spacing: normal !default;
 $title-publisher-city-text-transform: none !default;
 
-//Dedication
+// Dedication
 $dedication-margin-right: 0 !default;
 $dedication-margin-left: 0 !default;
 
-//Epigraph
+// Epigraph
 $epigraph-margin-right: 0 !default;
 $epigraph-margin-left: 0 !default;
 $epigraph-align: justify !default;
@@ -75,7 +74,7 @@ $copyright-line-height: 1.4em !default;
 
 // Section License
 $section-license-font-style: normal !default;
-$section-license-margin-top: 0em !default;
+$section-license-margin-top: 0 !default;
 
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/pages';

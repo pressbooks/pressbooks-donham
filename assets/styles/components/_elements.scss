@@ -2,38 +2,30 @@
 
 @if $type == 'epub' {
   $para-indent: 1em !default;
-
   $hx-margin-bottom: 1em !default;
   $hx-margin-top: 1em !default;
-
   $h1-margin-top: 1em !default;
   $h1-font-weight: bold !default;
   $h1-align: justify !default;
   $h1-line-height: 1.5em !default;
-
   $h2-margin-top: 1em !default;
   $h2-align: justify !default;
   $h2-margin-bottom: 1em !default;
   $h2-line-height: 1.5em !default;
-
   $h3-margin-top: 1em !default;
   $h3-align: justify !default;
   $h3-line-height: 1.5em !default;
-
   $h4-margin-top: 1.25em !default;
   $h4-align: justify !default;
   $h4-line-height: 1.5em !default;
-
   $h5-margin-top: 1.67em !default;
   $h5-font-weight: bold !default;
   $h5-align: justify !default;
   $h5-line-height: 1.5em !default;
-
   $h6-margin-top: 2.33em !default;
   $h6-font-weight: bold !default;
   $h6-align: justify !default;
   $h6-line-height: 1.5em !default;
-
   $blockquote-margin-top: 2em !default;
   $blockquote-margin-right: 4.05em !default;
   $blockquote-margin-bottom: 2em !default;
@@ -43,28 +35,20 @@
 @if $type == 'web' {
   $hx-line-height: 1.5em !default;
   $hx-margin-top: .75em !default;
-
   $section-title-font-weight: bold !default;
-
   $h1-text-transform: uppercase !default;
   $h1-font-weight: bold !default;
-
   $h2-text-transform: uppercase !default;
   $h2-font-weight: bold !default;
-
   $h3-text-transform: uppercase !default;
   $h3-font-weight: bold !default;
-
   $h4-text-transform: uppercase !default;
   $h4-font-weight: bold !default;
-
   $h5-text-transform: uppercase !default;
   $h5-font-weight: bold !default;
-
   $h6-text-transform: uppercase !default;
   $h6-font-weight: bold !default;
   $h6-font-family: $font-3 !default;
-
   $blockquote-font-size: .9em !default;
   $blockquote-line-height: 1.4em !default;
 }
@@ -123,24 +107,20 @@ $table-tr-border-top-width: (epub: 1px, prince: 0, web: 0) !default;
 $table-tr-border-top-style: (epub: solid, prince: none, web: none) !default;
 $table-tr-border-bottom-width: (epub: 1px, prince: 0, web: 0) !default;
 $table-tr-border-bottom-style: (epub: solid, prince: none, web: none) !default;
-
 $table-td-padding-top: 5px !default;
 $table-td-padding-right: 5px !default;
 $table-td-padding-bottom: 5px !default;
 $table-td-padding-left: 5px !default;
-
 $table-line-height: 1.1em;
 
 // Lists
 // UL
-$ul-ul-margin-top: 0em !default;
+$ul-ul-margin-top: 0 !default;
 $ul-margin-left: (epub: 0, prince: 2em, web: 0) !default;
 $ul-padding-left: 2em !default;
-$ul-margin-top: 0em !default;
-
-$ol-margin-left: (epub: 0em, prince: 2em, web: 0) !default;
+$ul-margin-top: 0 !default;
+$ol-margin-left: (epub: 0, prince: 2em, web: 0) !default;
 $ol-ol-margin-top: 0.25em !default;
-
 $li-li-margin-top: 0.25em !default;
 
 // Blockquote
