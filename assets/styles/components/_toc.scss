@@ -2,7 +2,6 @@
 
 @if $type == 'epub' {
   $toc-front-matter-title-font-style: italic !default;
-
   $toc-chapter-author-font-style: italic !default;
 }
 
@@ -13,7 +12,7 @@ $toc-block-margin-top: 1.5em !default;
 // TOC Page Number
 
 // TOC Front Matter
-$toc-front-matter-margin-top: (epub: 0em, prince: 1em) !default;
+$toc-front-matter-margin-top: (epub: 0, prince: 1em) !default;
 $toc-front-matter-page-number-font-size: 1em !default;
 $toc-front-matter-title-font-style: normal !default;
 
@@ -32,7 +31,7 @@ $toc-part-title-font-size: (epub: 1.2em, prince: 1.1em, web: 1em) !default;
 
 // TOC Chapter Title
 $toc-chapter-title-font-size: .875em !default;
-$toc-chapter-margin-top: (epub: 0em, prince: 1.2em) !default;
+$toc-chapter-margin-top: (epub: 0, prince: 1.2em) !default;
 
 // TOC Chapter Subtitle
 $toc-chapter-subtitle-margin-top: (epub: 0, prince: 0, web: 0) !default;
@@ -49,7 +48,7 @@ $toc-chapter-author-font-style: italic !default;
 @import 'components/toc/left';
 
 #toc .part {
-  margin-left: 0em;
+  margin-left: 0;
 }
 
 @if $type == "epub" {

@@ -1,18 +1,13 @@
 // Section Titles
 @if $type == 'epub' {
   $part-number-font-weight: normal !default;
-
   $aphorism-cite-align: right !default;
-}
-
-@else if $type == "web" {
+} @else if $type == "web" {
   $section-title-text-transform: uppercase !default;
   $section-title-font-weight: bold !default;
-
   $section-title-font-weight: 600 !default;
   $section-title-line-height: 1.5em !default;
   $aphorism-align: right !default;
-
   $back-matter-title-align: right !default;
   $back-matter-title-font-size: 1.2em !default;
 }
@@ -22,7 +17,7 @@ $section-title-block-margin-bottom: (epub: 2em, prince: 2.5cm, web: 5.4em) !defa
 $section-title-block-margin-top: (epub: 1em, prince: 3.05cm, web: 5.4em) !default;
 $section-header-margin-top: $section-title-block-margin-top !default;
 $section-title-font-size: (epub: 1.5em, prince: 1.635em, web: 1.2em) !default;
-$section-title-margin-top: (epub: 0, prince: 0em, web: 0) !default;
+$section-title-margin-top: (epub: 0, prince: 0, web: 0) !default;
 $section-title-margin-bottom: (epub: 2em, prince: 2.5cm, web: 2em) !default;
 $section-title-font-weight: bold !default;
 $section-title-align: right !default;
@@ -51,7 +46,6 @@ $aphorism-font-size: (epub: 0.875em, prince: 1em, web: 0.9em) !default;
 $aphorism-margin-left: (epub: 50%, prince: 50%, web: auto) !default;
 $aphorism-margin-bottom: (epub: 2em, prince: 4em, web: 0) !default;
 $aphorism-line-height: 1.6em !default;
-
 $aphorism-cite-font-variant: small-caps !default;
 $aphorism-cite-font-size: (epub: .875em, prince: .875em, web: 0.9em) !default;
 $aphorism-cite-align: right !default;
@@ -80,7 +74,7 @@ $part-title-font-weight: bold !default;
 $part-title-align: right !default;
 $part-title-margin-top: (epub: 2em, prince: 1em, web: 0) !default;
 $part-title-margin-left: (epub: 20%, prince: 0, web: 0) !default;
-$part-title-font-size:(epub: 1.7em, prince: 2.6em, web: 2.5em) !default;
+$part-title-font-size: (epub: 1.7em, prince: 2.6em, web: 2.5em) !default;
 
 // Chapter Number
 $chapter-number-display: inline !default;

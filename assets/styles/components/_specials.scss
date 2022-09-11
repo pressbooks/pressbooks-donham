@@ -3,11 +3,8 @@
 @if $type == 'epub' {
   $hr-margin-top: 10px !default;
   $hr-margin-bottom: 10px !default;
-
   $hr-break-symbols-margin-bottom: 20px !default;
-
   $textbox-align: justify !default;
-
   $textbox-padding-top: 1.5em !default;
   $textbox-padding-right: 1.5em !default;
   $textbox-padding-bottom: 1.5em !default;
@@ -53,7 +50,6 @@ $edu-header-font-size: .9em !default;
 // Footnotes
 $footnote-font-size: (epub: 0.9em, prince: 0.75rem, web: 0.9em) !default;
 $footnote-line-height: 1.4em !default;
-
 $footnote-indent: 1em !default;
 $footnote-number-marker-line-height: 1.4em !default;
 
@@ -76,7 +72,6 @@ $pullquote-margin-bottom: 20px !default;
 // Columns
 $column-twocolumn-font-size: 0.8em !default;
 $column-line-height: 1.2em !default;
-
 $column-threecolumn-text-align: left !default;
 
 // Sidebar
@@ -102,8 +97,8 @@ div.sidebar {
   width: 35%;
   float: right;
   margin-left: 0.75em;
-  margin-right: 0px;
-  background-color: rgb(230, 230, 230);
+  margin-right: 0;
+  background-color: rgb(230 230 230);
   font-size: 0.8em;
   font-style: italic;
   text-align: left;
@@ -122,7 +117,7 @@ div.sidebar {
 }
 
 .sidebar li {
-  margin-top: 0em;
+  margin-top: 0;
 }
 
 .textbox.exercises ol li ,
