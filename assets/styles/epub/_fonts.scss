@@ -1,7 +1,28 @@
 @import '_font-stack-epub'; // Dynamically generated
 
 $serif-epub: serif !default;
-$font-1: "Palatino Linotype", "Book Antiqua", palatino, georgia, times, $serif-epub;
-$font-2: "Palatino Linotype", "Book Antiqua", palatino, georgia, times, $serif-epub;
-$font-3: "Palatino Linotype", "Book Antiqua", palatino, georgia, times, $serif-epub;
+$sans-serif-epub: sans-serif !default;
 
+// Load Shape Shifter fonts, if any. Must come after Global Typography snippet
+@import 'shapeshifter-font-stack-epub';
+
+$shapeshifter-font-1-is-serif: true !default;
+$shapeshifter-font-2-is-serif: true !default;
+
+// Insert custom fonts for your theme into the font stacks below. Always end the
+// stack with $serif-epub or $sans-serif-epub, as appropriate—this allows custom
+// language support to be added dynamically.
+
+@if variable-exists(shapeshifter-font-1) {
+  $font-1: $shapeshifter-font-1, if($shapeshifter-font-1-is-serif, $serif-epub, $sans-serif-epub);
+} @else {
+  $font-1: "Palatino Linotype", "Book Antiqua", palatino, georgia, times, $serif-epub;
+}
+
+@if variable-exists(shapeshifter-font-2) {
+  $font-2: $shapeshifter-font-2, if($shapeshifter-font-2-is-serif, $serif-epub, $sans-serif-epub);
+} @else {
+  $font-2: "Palatino Linotype", "Book Antiqua", palatino, georgia, times, $serif-epub;
+}
+
+$font-3: $font-2;
