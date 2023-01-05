@@ -2,8 +2,29 @@
 
 $serif-web: serif !default;
 $sans-serif-web: sans-serif !default;
-$font-1: "Tinos", $serif-web;
-$font-2: "Galdeano", $sans-serif-web;
-$font-3: "Galdeano", $sans-serif-web;
 
-@import "https://fonts.googleapis.com/css?family=Galdeano|Tinos:400,400italic,700,700italic";
+// Load Shape Shifter fonts, if any. Must come after Global Typography snippet
+@import 'shapeshifter-font-stack-web';
+
+$shapeshifter-font-1-is-serif: true !default;
+$shapeshifter-font-2-is-serif: true !default;
+
+// Insert custom fonts for your theme into the font stacks below. Always end the
+// stack with $serif-web or $sans-serif-web, as appropriate—this allows custom
+// language support to be added dynamically.
+
+@if variable-exists(shapeshifter-font-1) {
+  $font-1: $shapeshifter-font-1, if($shapeshifter-font-1-is-serif, $serif-web, $sans-serif-web);
+} @else {
+  $font-1: "Tinos", $serif-web;
+  @import "https://fonts.googleapis.com/css?family=Tinos:400,400italic,700,700italic";
+}
+
+@if variable-exists(shapeshifter-font-2) {
+  $font-2: $shapeshifter-font-2, if($shapeshifter-font-2-is-serif, $serif-web, $sans-serif-web);
+} @else {
+  $font-2: "Galdeano", $sans-serif-web;
+  @import "https://fonts.googleapis.com/css?family=Galdeano";
+}
+
+$font-3: $font-2;

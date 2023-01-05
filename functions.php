@@ -9,3 +9,5 @@ function donham_theme_setup() {
 }
 
 add_action( 'after_setup_theme', 'donham_theme_setup' );
+
+add_filter( 'pb_is_shape_shifter_compatible', '__return_true' );
