@@ -1,0 +1,16 @@
+name: Run Composer Autoupdate
+
+on:
+  push:
+    branches: [ dev ]
+
+jobs:
+  trigger_bedrock_updates:
+    if: github.ref == 'refs/heads/dev'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Bedrock Updates
+        uses: pressbooks/composer-autoupdate-bedrock@v1.1
+        with:
+          triggered-by: ${{ github.repository }}
+          token: ${{ secrets.PAT_COMPOSER_UPDATE }}
