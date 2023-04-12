@@ -2,15 +2,16 @@ name: Run Composer Autoupdate
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ dev, production ]
 
 jobs:
   trigger_bedrock_updates:
-    if: github.ref == 'refs/heads/dev'
+    if: github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Bedrock Updates
-        uses: pressbooks/composer-autoupdate-bedrock@v1
+        uses: pressbooks/composer-autoupdate-bedrock@v2
         with:
           triggered-by: ${{ github.repository }}
           token: ${{ secrets.PAT_COMPOSER_UPDATE }}
+          branch: ${{ github.ref }}
