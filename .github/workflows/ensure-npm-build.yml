@@ -7,4 +7,4 @@ on:
 jobs:
   update-npm-build:
     if: ${{ github.actor != 'dependabot[bot]' && github.actor != 'dependabot-preview[bot]' }}
-    uses: pressbooks/reusable-workflows/.github/workflows/npm-build.yml@dev
+    uses: pressbooks/reusable-workflows/.github/workflows/npm-build.yml@main

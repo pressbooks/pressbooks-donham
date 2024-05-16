@@ -1,4 +1,4 @@
-name: Prepare Release
+name: Prepare Release 🚀
 
 on:
   push:
@@ -7,6 +7,6 @@ on:
 
 jobs:
   deploy:
-    uses: pressbooks/reusable-workflows/.github/workflows/prepare-release.yml@dev
+    uses: pressbooks/reusable-workflows/.github/workflows/prepare-release.yml@main
     secrets:
       ga_token: ${{ secrets.GITHUB_TOKEN }}

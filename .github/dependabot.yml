@@ -11,7 +11,7 @@ updates:
     versioning-strategy: "increase-if-necessary"
     ignore:
       - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+        update-types: [ "version-update:semver-major" ]
     groups:
       composer-dependencies:
         dependency-type: "production"
@@ -29,11 +29,20 @@ updates:
     versioning-strategy: "increase-if-necessary"
     ignore:
       - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+        update-types: [ "version-update:semver-major" ]
     groups:
       npm-dependencies:
         dependency-type: "production"
       npm-dev-dependencies:
         dependency-type: "development"
-      npm-security-updates:
-        applies-to: security-updates
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    groups:
+      all-github-actions:
+        patterns:
+          - ".*"
