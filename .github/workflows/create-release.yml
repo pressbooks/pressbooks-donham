@@ -8,5 +8,4 @@ on:
 jobs:
   deploy:
     uses: pressbooks/reusable-workflows/.github/workflows/prepare-release.yml@main
-    secrets:
-      ga_token: ${{ secrets.GITHUB_TOKEN }}
+    secrets: inherit
